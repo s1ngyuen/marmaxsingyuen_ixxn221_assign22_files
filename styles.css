@@ -461,6 +461,7 @@ footer div:nth-child(2) {
     
     .title {
         margin-top:2vh;
+	height:auto;
     }
     
     /* Navbar */  
