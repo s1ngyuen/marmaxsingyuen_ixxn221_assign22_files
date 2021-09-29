@@ -1,0 +1,560 @@
+@charset "UTF-8";
+
+/* Containers */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+center {
+    display: table;
+    height:100%;
+    width:100%;
+}
+
+center > * {
+    display: table-cell; 
+    vertical-align: middle;
+    text-align:center;
+}
+
+header {
+    display:grid;
+    grid-template-columns: 1fr 18fr 1fr;
+    height:8vh;
+    width:100%;
+    margin:1.5vh 0;
+    background-color:#FDCE00;
+    border: 0.2rem solid #D40E2B;
+    border-left:none;
+    border-right:none;
+}
+
+footer {
+    display:grid;
+    grid-template-rows:2fr 5fr;
+}
+
+section {
+    display:grid;
+    grid-template-rows: 15vh 67vh;
+    height:82vh;
+    width:60%;
+    margin: 0 auto;
+}
+
+.container {
+    display:grid;
+    grid-template-rows: 10vh 83vh 7vh;
+    height:100vh;
+    width:100%;
+    background-color:#F1E9BB;
+}
+
+.scroll {
+    overflow-y:scroll;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* General Elements */
+
+input {
+    height:5vh;
+    width:90%;
+    margin-bottom:2vh;
+    color:#D40E2B;
+    background-color:transparent;
+    border: 0.2rem solid #D40E2B;
+}
+
+.button {
+    display:block;
+    height:5vh;
+    width:80%;
+    line-height:4.25vh;
+    background-color:#FDCE00;
+    border: 0.375vh solid #D40E2B;
+    margin:1vh auto;
+}
+
+/* Fonts and Text */
+
+@font-face {
+    font-family: 'JIBurrito';
+    src: url('fonts/JIBurrito.woff') format('woff');
+}
+
+h1, h2, h3, a, p {
+    color:#D40E2B;
+    font-weight:normal;
+    text-align:center;
+    text-decoration:none;
+    line-height:1;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-family: 'JIBurrito';
+    font-size:4rem;
+}
+
+h2, h3, a, input {
+    font-family: 'Suez One', serif;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    font-size:1rem;
+    line-height:1.25;
+    width:80%;
+}
+
+h2 {
+    font-size:1.5rem;
+}
+
+h3 {
+    font-size:1.25rem;
+    line-height:1.5;
+    color:#FDCE00;
+}
+
+a {
+    font-size:1.25rem;
+}
+
+.message h3 {
+    margin-bottom:3vh;
+    color:#D40E2B;
+}
+
+.title {
+    position:relative;
+    height:15vh;
+}
+
+.title h1 {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;   
+    justify-content: flex-end; 
+    width:100%;
+}
+
+nav a {
+    line-height:7.25vh;
+    padding:0 2%;
+}
+
+a:hover {
+    cursor:pointer;
+}
+
+.cart-icon img {
+    height:3.5vh;
+    width:auto;
+    margin:1.875vh auto;
+}
+
+.logo {
+    height:12vh;
+    width:auto;
+    position:absolute;
+    left:1%;
+    top:0.5vh;
+}
+
+.navbar-icon {
+    display:none;
+    height:2.5vh;
+    width:auto;
+    margin:2.25vh auto;
+}
+
+/* Homepage Navbar */
+
+.home-navbar {
+    grid-template-columns: 1fr 9fr 0fr 9fr 1fr;
+}
+
+.home-navbar h1 {
+    display:block;
+    height:8vh;
+    font-size:4vh;
+    line-height:8vh;
+}
+
+.home-navbar nav {
+    justify-content: space-around;
+    width:90%;
+    margin:0 auto;
+}
+
+.home-navbar .logo {
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.home-navbar > *:nth-child(4) a {
+    float:left;
+}
+
+/* Mobile Navbar */
+
+.mobile-navbar {
+    height:100vh;
+    width:100%;
+    background-color:#FDCE00;
+}
+
+.mobile-navbar nav {
+    display:block;
+    padding:15vh 5%;
+}
+
+.mobile-navbar a {
+    display:block;
+    height:6vh;
+    border-bottom: 0.2rem solid #D40E2B;
+}
+
+.mobile-navbar a:first-of-type {
+    border-top: 0.2rem solid #D40E2B;
+}
+
+.mobile-navbar h2 {
+    line-height:6vh;
+}
+
+/* Footer */
+
+footer a {
+    line-height:5vh;
+    color:#FDCE00;
+    padding: 0 2%;
+    float:right;
+}
+
+footer div:nth-child(1) {
+    background-color:#D40E2B;
+}
+
+footer div:nth-child(2) {
+    background-color:#047BB0;
+}
+
+/* Home Page */
+
+.home-page {
+    display:block;
+}
+
+.home-page h1 {
+    font-size:5rem;
+}
+
+/* Menu Page */
+
+.menu {
+    display:grid;
+    grid-template-rows: 7vh 60vh;
+    height:auto;
+}
+
+.menu-item {
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height:12vh;
+    margin: 2vh auto;
+}
+
+.menu-item img {
+    height:11vh;
+    width:80%;
+    object-fit: cover;
+    border: 0.2rem solid #D40E2B;
+    margin: 0.5vh auto;
+}
+
+.menu-item-text > * {
+    text-align:left;
+    float:left;
+}
+
+.menu-item h2 {
+    line-height:4vh;
+}
+
+.menu-item p {
+    width:80%;
+    margin:0 auto;
+}
+
+.menu-title {
+    height:5vh;
+    width:100%;
+    margin:1vh auto;
+    background-color:#FDCE00;
+    border: 0.2rem solid #D40E2B;
+}
+
+.menu-title h2 {
+    line-height:4.25vh;
+}
+
+/* Cart Page */
+
+.cart-page {
+    display:none;
+    grid-template-rows:5vh 50vh 5vh;
+    height:65vh;
+}
+
+.cart-table {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cart-table > div {
+    width:100%;
+    padding: 0 5%;
+    margin:0 auto;
+}
+
+.cart-table h3 {
+    text-align:left;
+}
+
+.cart-order {
+    display:grid;
+    grid-template-rows: 3vh 22vh 5vh;
+    height:30vh;
+    border-left:0.2rem solid #D40E2B;
+}
+
+.cart-item {
+    display:grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows: 3vh 7vh;
+    height:10vh;
+    width:100%;
+}
+
+.cart-item:nth-child(2) {
+    text-align:right;
+}
+
+.cart-item h3 {
+    color:#D40E2B;
+}
+
+.cart-item p {
+    grid-column: span 2;
+    text-align:left;
+}
+
+.cart-item h3, .cart-total h3 {
+    color:#D40E2B;
+}
+
+.cart-total {
+    display:grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+.cart-total:nth-child(2){
+    text-align:right;
+}
+
+.confirm h3:nth-child(even) {
+    color:#D40E2B;
+    margin-bottom:2vh;
+}
+
+.cart-navigation {
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#cart-page-1 .scroll, #cart-page-2 .cart-table {
+    grid-row-start: 2;
+}
+
+#cart-page-1 .cart-navigation, #cart-page-2 .cart-navigation {
+    grid-row-start: 3;
+}
+
+#cart-page-1 .cart-navigation a:first-child {
+    grid-column-start: 2;
+}
+
+#cart-page-2 .cart-navigation a:first-child {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+#cart-page-2 .cart-navigation a:nth-child(2) {
+    grid-column-start: 1;
+}
+
+#cart-page-3 .cart-navigation a:first-child {
+    grid-column-start: 2;
+}
+
+/* Complants Page */
+.complaint-page {
+    display:none;
+    grid-template-rows:8vh 47vh 5vh;
+    height:65vh;
+    width:60%;
+    margin:0 auto;
+}
+
+.complaint-page input {
+    margin: 0 5%;
+}
+
+#complaint-page-1 > *:first-child {
+    grid-row-start: 2;
+}
+
+#complaint-page-1 > *:nth-child(2) {
+    grid-row-start: 3;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 700px) {
+    
+    /* Containers */
+    
+    section {
+        width:80%;
+    }
+    
+    /* General Elements */
+    
+    input {
+        margin-left: 5%;
+    }
+    
+    /* Fonts and Text */
+    
+    .title {
+        margin-top:2vh;
+    }
+    
+    /* Navbar */  
+    
+    nav {
+        display:none;
+    }
+    
+    .navbar-icon {
+        display:block;
+    }
+    
+    .logo {
+        left:0;
+        right:0;
+        margin:auto;
+    }
+    
+    /* Homepage Navbar */
+    
+    .home-navbar, header {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    
+    .home-navbar h1 {
+        display:none;
+    }
+    
+    /* Menu Page */
+    
+    .menu-item {
+        display:block;
+        height:auto;
+        margin: 2vh auto;
+    }
+    
+    .menu-item-text > * {
+        text-align:center;
+        float:none;
+    }
+    
+    .menu-item img {
+        height:20vh;
+        width:80%;
+        margin: 1vh 10%;
+    }
+    
+    /* Cart Page */
+    
+    .cart-page {
+        grid-template-rows: none;
+    }
+    
+    .cart-table {
+        display:block;
+    }
+    
+    .cart-table h3 {
+        text-align:center;
+    }
+    
+    .cart-order {
+        border:none;
+        height:auto;
+        display:block;
+    }
+    
+    .cart-item, .cart-total {
+        width:90%;
+        margin: 0 auto;
+    }
+    
+    .cart-item{
+        height:3vh;
+    }
+    
+    .cart-item p {
+        display:none;
+    }
+    
+    .cart-item h3:first-child, .cart-total h3:first-child {
+        text-align:left;
+    }
+    
+    .cart-navigation {
+        display:block;
+    }
+    
+    /* Complaints Page */
+    
+    .complaint-page, #cart-page-3 {
+        grid-template-rows:10vh 45vh 5vh;
+        width:90%;
+        margin:5vh auto;
+    }
+
+}

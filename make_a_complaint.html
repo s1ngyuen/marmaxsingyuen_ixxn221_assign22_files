@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Complaint | Los Pollos Hermanos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Suez+One&display=swap" rel="stylesheet" type='text/css'>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Navbar -->
+    <div class="mobile-navbar" id="mobile-navbar" style="display:none">
+        <nav>
+            <a href="index.html"><h2>Home</h2></a>
+            <a><h2>About us</h2></a>
+            <a href="our_menu.html"><h2>Our menu</h2></a>
+            <a href="make_a_complaint.html"><h2>Make a complaint</h2></a>
+            <a><h2>Make a booking</h2></a>
+            <a href="cart.html"><h2>Cart</h2></a>
+        </nav>
+    </div>
+    <!-- Content -->
+    <div class="container">
+        <!-- Navbar -->
+        <header>
+            <img class="navbar-icon" onclick="document.getElementById('mobile-navbar').style.display = 'block'"src="images/Mobile_navbar.png">
+            <a href="index.html"><img class="logo" src="images/LPH_Logo.png" ></a>
+            <nav>
+                <a>About us</a>
+                <a href="our_menu.html">Our menu</a>
+                <a href="make_a_complaint.html">Make a complaint</a>
+                <a>Make a booking</a>
+            </nav>
+            <a class="cart-icon" href="cart.html"><img src="images/Cart_icon.png"></a>
+        </header>
+        <!-- Main Content -->
+        <section>
+            <!-- Title -->
+           <div class="title">
+                <h1 id="complaint-title">MAKE A COMPLAINT</h1>
+            </div>
+            <!-- Complaint Page 1 -->
+            <div class="complaint-page" id="complaint-page-1" style="display:grid;">
+                <div>
+                    <h3>Your Name:</h3>
+                    <input type="text" onchange="document.getElementById('name').innerHTML = this.value">
+                    <h3>Your e-mail address:</h3>
+                    <input type="text" onchange="document.getElementById('email').innerHTML = this.value">
+                    <h3>Your complaint:</h3>
+                    <input type="text" onchange="document.getElementById('complaint').innerHTML = this.value">
+                </div>
+                <div>
+                  <a onclick="Complaint1Forward()"  class="button">Submit complaint</a>
+                </div>
+            </div>
+            
+            <!-- Complaint Page 2 -->
+            <div class="complaint-page" id="complaint-page-2">
+                <div class="message">
+                    <h3>Thank you for your complaint, my colleauges will be in touch with you shortly.</h3>
+                </div>
+                <div class="confirm">
+                    <h3>Your Name:</h3>
+                    <h3 id="name">Gus Fring</h3>
+                    <h3>Your e-mail address:</h3>
+                    <h3 id="email">gus.fring@gmail.com</h3>
+                    <h3>Your complaint:</h3>
+                    <h3 id="complaint">Your notes</h3>
+                </div>
+                <div>
+                    <a href="index.html"  class="button">Return home</a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div></div>
+            <div>
+                <a href="index.html">© 2021 Los Pollos Hermanos</a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/complaint-navigation.js"></script>
+</body>
+</html>

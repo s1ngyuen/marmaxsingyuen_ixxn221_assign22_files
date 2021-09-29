@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Los Pollos Hermanos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Suez+One&display=swap" rel="stylesheet" type='text/css'>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Navbar -->
+    <div class="mobile-navbar" id="mobile-navbar" style="display:none">
+        <nav>
+            <a href="index.html"><h2>Home</h2></a>
+            <a href="about_us.html"><h2>About us</h2></a>
+            <a href="our_menu.html"><h2>Our menu</h2></a>
+            <a href="make_a_complaint.html"><h2>Make a complaint</h2></a>
+            <a href="make_a_booking.html"><h2>Make a booking</h2></a>
+            <a href="cart.html"><h2>Cart</h2></a>
+        </nav>
+    </div>
+    <div class="container">
+        <header>
+            <img class="navbar-icon" onclick="document.getElementById('mobile-navbar').style.display = 'block'"src="images/Mobile_navbar.png">
+            <a href="index.html"><img class="logo" src="images/LPH_Logo.png" ></a>
+            <nav>
+                <a>About us</a>
+                <a href="our_menu.html">Our menu</a>
+                <a href="make_a_complaint.html">Make a complaint</a>
+                <a>Make a booking</a>
+            </nav>
+            <a class="cart-icon" href="cart.html"><img src="images/Cart_icon.png"></a>
+        </header>
+        <section>
+            <!-- Title -->
+            <div class="title">
+                <h1 id="cart-title">YOUR CART</h1>
+            </div>
+            <!-- Cart Page 1 -->
+            <div class="cart-page" id="cart-page-1" style="display:grid;">
+                <!-- Cart Items -->
+                <div class="scroll">
+                    <div class="menu-item">
+                        <div>
+                            <img src="images/Item_1.png">
+                        </div>
+                        <div class="menu-item-text">
+                            <h2>The Heisenberg</h2>
+                            <p>Our delicious ABQ Hot Chicken sandwich with a side of Spice Curls and a side of Slaw Goodman.</p>
+                        </div>
+                        <div>
+                            <h2>$17.50</h2>
+                            <a class="button" href="cart.html">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cart Navigation -->
+                <div class="cart-navigation">
+                  <a onclick="Cart1Forward()" class="button">Enter details</a>
+                </div>
+            </div>
+
+            <!-- Cart Page 2 -->
+            <div class="cart-page" id="cart-page-2">
+                <div class="cart-table">
+                    <!-- Detail Inputs -->
+                    <div>
+                       <h3>Your Name:</h3>
+                       <input type="text" onchange="document.getElementById('name').innerHTML = this.value">
+                       <h3>Your e-mail address:</h3>
+                       <input type="text" onchange="document.getElementById('email').innerHTML = this.value">
+                       <h3>Add notes:</h3>
+                       <input type="text" onchange="document.getElementById('notes').innerHTML = this.value">
+                    </div>
+                    <!-- Order Confirmation -->
+                    <div class="cart-order">
+                       <h3>Your Order:</h3>
+                       <div class="cart-item">
+                            <h3>The Heisenberg</h3>
+                            <h3>$17.50</h3>
+                            <p>Our delicious ABQ Hot Chicken sandwich with a side of Spice Curls and a side of Slaw Goodman.</p>
+                       </div>
+                       <div class="cart-total">
+                           <h3>Total: </h3>
+                           <h3>$17.50</h3>
+                       </div>
+                    </div>
+                </div>
+                <!-- Cart Navigation -->
+                <div class="cart-navigation">
+                    <a onclick="Cart2Forward()" class="button">Check out</a>
+                    <a onclick="Cart2Back()" class="button">Back to cart</a>
+                </div>
+            </div>
+            <!-- Cart Page 3 -->
+            <div class="cart-page" id="cart-page-3">
+                <div class="message">
+                    <h3>Thank you for you order! Please check your email for confirmation and expected pickup time.</h3>
+                </div>
+                <div class="cart-table">
+                    <!-- Detail Confirmation -->
+                    <div class="confirm">
+                       <h3>Your Name:</h3>
+                       <h3 id="name">Gus Fring</h3>
+                       <h3>Your e-mail address:</h3>
+                       <h3 id="email">gus.fring@gmail.com</h3>
+                       <h3>Add notes:</h3>
+                       <h3 id="notes">Your notes</h3>
+                    </div>
+                    <!-- Order Confirmation -->
+                    <div class="cart-order">
+                       <h3>Your Order:</h3>
+                       <div>
+                           <div class="cart-item">
+                                <h3>The Heisenberg</h3>
+                                <h3>$17.50</h3>
+                                <p>Our delicious ABQ Hot Chicken sandwich with a side of Spice Curls and a side of Slaw Goodman.</p>
+                           </div>
+                       </div>
+                       <div class="cart-total">
+                           <h3>Total: </h3>
+                           <h3>$17.50</h3>
+                       </div>
+                    </div>
+                </div>
+                <!-- Cart Navigation -->
+                <div class="cart-navigation">
+                    <a href="index.html" class="button">Return home</a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div></div>
+            <div>
+                <a href="index.html">© 2021 Los Pollos Hermanos</a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/cart-navigation.js"></script>
+</body>
+</html>
+
