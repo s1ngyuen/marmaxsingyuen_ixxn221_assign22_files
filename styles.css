@@ -260,6 +260,11 @@ footer div:nth-child(2) {
     font-size:5rem;
 }
 
+.home-page .button {
+    width:20vw;
+    margin-top:5vh;
+}
+
 /* Menu Page */
 
 .menu {
@@ -485,8 +490,14 @@ footer div:nth-child(2) {
         display:none;
     }
     
+    /* Home Page */
+	
+    .home-page .button {
+        width:80%;
+    }
+	
     /* Menu Page */
-    
+	
     .menu {
         display:block;
     }
