@@ -441,7 +441,7 @@ footer div:nth-child(2) {
     
     section {
         height:auto;
-        display:block;
+        grid-template-rows: 15vh auto;
         width:80%;
     }
     
@@ -508,10 +508,6 @@ footer div:nth-child(2) {
         grid-template-rows:auto;
         height:auto;
         width:90%;
-    }
-
-    .cart-page center, .complaint-page center {
-        height:15vh
     }
 
     .cart-table {
