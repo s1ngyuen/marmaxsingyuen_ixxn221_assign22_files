@@ -443,6 +443,7 @@ footer div:nth-child(2) {
         height:auto;
         grid-template-rows: 15vh auto;
         width:80%;
+	overflow-y:scroll;
     }
     
     /* General Elements */
@@ -485,6 +486,9 @@ footer div:nth-child(2) {
     
     /* Menu Page */
     
+    .menu {
+        display:block;
+    }
     .menu-item {
         display:block;
         height:auto;
