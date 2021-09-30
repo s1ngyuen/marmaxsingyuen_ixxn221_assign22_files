@@ -275,7 +275,7 @@ footer div:nth-child(2) {
 
 .menu-item {
     display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
     height:12vh;
     margin: 2vh auto;
 }
