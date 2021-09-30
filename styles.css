@@ -425,6 +425,7 @@ footer div:nth-child(2) {
 
 .complaint-page input {
     margin: 0 5%;
+    margin-bottom:2vh;
 }
 
 #complaint-page-1 > *:first-child {
