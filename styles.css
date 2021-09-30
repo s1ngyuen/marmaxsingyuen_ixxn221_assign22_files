@@ -43,8 +43,8 @@ footer {
 
 section {
     display:grid;
-    grid-template-rows: 15vh 67vh;
-    height:82vh;
+    grid-template-rows: 20vh 63vh;
+    height:83vh;
     width:60%;
     margin: 0 auto;
 }
