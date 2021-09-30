@@ -503,7 +503,17 @@ footer div:nth-child(2) {
     }
     
     /* Cart Page */
-    
+
+    .cart-page, .complaint-page {
+        grid-template-rows:auto;
+        height:auto;
+        width:90%;
+    }
+
+    .cart-page center, .complaint-page center {
+        height:15vh
+    }
+
     .cart-table {
         display:block;
     }
@@ -537,14 +547,5 @@ footer div:nth-child(2) {
     
     .cart-navigation {
         display:block;
-    }
-    
-    /* Complaints Page */
-    
-    .complaint-page, .cart-page {
-        grid-template-rows:auto;
-        height:auto;
-        width:90%;
-        border:2px solid;
     }
 }
