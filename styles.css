@@ -61,29 +61,8 @@ section {
     overflow-y:scroll;
 }
 
-.scroll::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
-}
-
-/* General Elements */
-
-input {
-    height:5vh;
-    width:90%;
-    margin-bottom:2vh;
-    color:#D40E2B;
-    background-color:transparent;
-    border: 0.2rem solid #D40E2B;
-}
-
-.button {
-    display:block;
-    height:5vh;
-    width:80%;
-    line-height:4.25vh;
-    background-color:#FDCE00;
-    border: 0.375vh solid #D40E2B;
-    margin:1vh auto;
 }
 
 /* Fonts and Text */
@@ -136,6 +115,28 @@ a {
 .message h3 {
     margin-bottom:3vh;
     color:#D40E2B;
+}
+
+/* General Elements */
+
+input {
+    height:5vh;
+    width:90%;
+    margin-bottom:2vh;
+    color:#D40E2B;
+    background-color:transparent;
+    border: 0.2rem solid #D40E2B;
+}
+
+.button {
+    display:block;
+    height:5vh;
+    width:80%;
+    font-size:1rem;
+    line-height:4.25vh;
+    background-color:#FDCE00;
+    border: 0.375vh solid #D40E2B;
+    margin:1vh auto;
 }
 
 /* Navbar */
