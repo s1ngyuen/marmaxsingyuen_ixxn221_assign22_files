@@ -442,7 +442,7 @@ footer div:nth-child(2) {
     
     section {
         height:auto;
-        grid-template-rows: 15vh auto;
+        grid-template-rows: 20vh auto;
         width:80%;
 	overflow-y:scroll;
     }
