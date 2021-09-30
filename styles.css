@@ -414,11 +414,12 @@ footer div:nth-child(2) {
 }
 
 /* Complants Page */
+
 .complaint-page {
     display:none;
     grid-template-rows:8vh 47vh 5vh;
     height:65vh;
-    width:60%;
+    width:80%;
     margin:0 auto;
 }
 
