@@ -507,7 +507,6 @@ footer div:nth-child(2) {
     .cart-page, .complaint-page {
         grid-template-rows:auto;
         height:auto;
-        width:90%;
     }
 
     .cart-table {
