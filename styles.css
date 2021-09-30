@@ -138,6 +138,19 @@ a {
     color:#D40E2B;
 }
 
+.title {
+    position:relative;
+    height:15vh;
+}
+
+.title h1 {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
 /* Navbar */
 
 nav {
@@ -431,17 +444,10 @@ footer div:nth-child(2) {
 /* Mobile */
 
 @media only screen and (max-width: 700px) {
-    body {
-        overflow:auto;
-    }
     
-    .container 
-        height:auto;
-    }
+    /* Containers */
     
     section {
-        height:auto;
-        grid-template-rows: 15vh auto;
         width:80%;
     }
     
@@ -503,13 +509,11 @@ footer div:nth-child(2) {
     }
     
     /* Cart Page */
-
-    .cart-page, .complaint-page {
-        grid-template-rows:auto;
-        height:auto;
-        width:90%;
+    
+    .cart-page {
+        grid-template-rows: none;
     }
-
+    
     .cart-table {
         display:block;
     }
@@ -544,4 +548,13 @@ footer div:nth-child(2) {
     .cart-navigation {
         display:block;
     }
+    
+    /* Complaints Page */
+    
+    .complaint-page, #cart-page-3 {
+        grid-template-rows:10vh 45vh 5vh;
+        width:90%;
+        margin:5vh auto;
+    }
+
 }
